@@ -6,7 +6,7 @@ It replaces accentuated chars to non-accentuated and spaces by minus sign. All o
 
 # Installation
 
-go get github.com/metal3d/go-slugify
+    go get github.com/metal3d/go-slugify
 
 # Usage
 
