@@ -1,4 +1,4 @@
-// Package Slugify provide a function that 
+// Package slugify provide a function that 
 // gives a non accentuated and minus separated string from a
 // accentuated string. The code is based from a Javascript function
 // that you can get here:
