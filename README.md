@@ -1,3 +1,5 @@
+[![GoDoc](https://godoc.org/github.com/metal3d/go-slugify?status.svg)](https://godoc.org/github.com/metal3d/go-slugify)
+
 # Slugify
 
 This is a simple package that handle slugify.Marshal() function that returns slugified string. 
