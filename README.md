@@ -1,6 +1,7 @@
 # Slugify
 
-This is a simple package that handle Slugify() function. The slugification is usefull for URL build from accentuated strings.
+This is a simple package that handle slugify.Marshal() function that returns slugified string. 
+The slugification is useful for URL build from accentuated strings.
 
 It replaces accentuated chars to non-accentuated and spaces by minus sign. All other chars (non-alphanumeric) are removed.
 
@@ -24,6 +25,7 @@ import (
 
 func main(){
     txt := "Être en été est à mi-chemin de noël"
+    slug := slugify.Marshal(txt)
     fmt.Println(slug)
     // print: etre-en-ete-est-a-mi-chemin-de-noel
 }
