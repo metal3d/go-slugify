@@ -1,4 +1,4 @@
-// Package slugify provide a function that 
+// Package slugify provide a function that
 // gives a non accentuated and minus separated string from a
 // accentuated string. The code is based from a Javascript function
 // that you can get here:
@@ -39,12 +39,14 @@ var (
 )
 
 // Marshal function returns slugifies string "s"
-func Marshal(s string) string {
+func Marshal(s string, lower ...bool) string {
 	for _, r := range rExps {
 		s = r.re.ReplaceAllString(s, r.ch)
 	}
 
-	s = strings.ToLower(s)
+	if len(lower) > 0 && lower[0] {
+		s = strings.ToLower(s)
+	}
 	s = spacereg.ReplaceAllString(s, "-")
 	s = noncharreg.ReplaceAllString(s, "")
 	s = minusrepeatreg.ReplaceAllString(s, "-")
