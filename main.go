@@ -34,7 +34,7 @@ var (
 		{re: regexp.MustCompile(`[\xF1]`), ch: "n"},
 	}
 	spacereg       = regexp.MustCompile(`\s+`)
-	noncharreg     = regexp.MustCompile(`[^a-z0-9-]`)
+	noncharreg     = regexp.MustCompile(`[^A-Za-z0-9-]`)
 	minusrepeatreg = regexp.MustCompile(`\-{2,}`)
 )
 
