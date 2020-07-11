@@ -26,10 +26,10 @@ import (
 )
 
 func main(){
-    txt := "Être en été est à mi-chemin de noël"
+    txt := "Être en été, c'est être à mi-chemin de noël"
     slug := slugify.Marshal(txt)
     fmt.Println(slug)
-    // print: etre-en-ete-est-a-mi-chemin-de-noel
+    // print: etre-en-ete-cest-etre-a-mi-chemin-de-noel
 }
 ```
 
